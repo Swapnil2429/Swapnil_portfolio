@@ -4,45 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background: #333;
+            background: #2c3e50;
             color: white;
-            padding: 20px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
         }
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
+            display: flex;
         }
         nav ul li {
-            display: inline;
             margin: 0 15px;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffbd39;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 10px;
+            border: 3px solid #ffbd39;
         }
         section {
-            padding: 20px;
+            padding: 40px 20px;
         }
         .project {
             border: 1px solid #ddd;
             padding: 15px;
             margin: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s ease-out;
+        }
+        .project:hover {
+            transform: scale(1.1);
+        }
+        .skill-mf .progress {
+            margin: .5rem 0 1.2rem 0;
+            border-radius: 0;
+            height: .7rem;
+            background-color: #cde1f8;
+        }
+        .skill-mf .progress .progress-bar {
+            height: .7rem;
+            background-color: #ffbd39;
+        }
+        #typing-animation {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(20, end) infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Data Scientist | Developer | Analyst</p>
+        <div class="logo">Your Name</div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -53,35 +114,41 @@
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio! I am a passionate data scientist with expertise in Python, SQL, and machine learning.</p>
-    </section>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="your-photo.jpg" alt="Your Photo">
+            <p>Welcome to my portfolio! I am a passionate developer with expertise in Web Development.</p>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Machine Learning</li>
-            <li>Data Visualization</li>
-        </ul>
-    </section>
+        <section id="skills" class="skill-mf">
+            <h2>Skills</h2>
+            <div class="progress">
+                <div class="progress-bar" style="width: 80%">HTML & CSS</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 70%">JavaScript</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 85%">React</div>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Name</h3>
-            <p>Description of the project.</p>
-            <a href="#">View Project</a>
-        </div>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project zoom-effect">
+                <h3>Project Name</h3>
+                <p>Description of the project.</p>
+                <a href="#">View Project</a>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: <a href="https://github.com/yourgithub">yourgithub</a></p>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: your.email@example.com</p>
+            <p>GitHub: <a href="https://github.com/yourgithub">yourgithub</a></p>
+        </section>
+    </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -99,3 +166,4 @@
     </script>
 </body>
 </html>
+
