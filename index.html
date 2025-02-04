@@ -1,17 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swapnil Kapadnis | Data Analyst</title>
+    <title>Your Name | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .project {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        <h1>Swapnil Kapadnis</h1>
-        <p>Data Analyst</p>
+        <h1>Your Name</h1>
+        <p>Data Scientist | Developer | Analyst</p>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -24,54 +55,47 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Data analyst with a passion for uncovering insights from data and helping businesses make data-driven decisions.</p>
+        <p>Welcome to my portfolio! I am a passionate data scientist with expertise in Python, SQL, and machine learning.</p>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>Data Analysis & Visualization</li>
-            <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
-            <li>SQL & Database Management</li>
-            <li>Excel (Pivot Tables, VLOOKUP)</li>
-            <li>Tableau & Power BI</li>
-            <li>Machine Learning Basics</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Machine Learning</li>
+            <li>Data Visualization</li>
         </ul>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Health Statistics Prediction</h3>
-            <p>Using Linear Regression for health insights.</p>
-            <a href="https://github.com/Swapnil2429/Health-Statistics-Prediction-using-Linear-Regression" target="_blank">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Sales Analysis Dashboard</h3>
-            <p>Web-based analytics for sales performance.</p>
-            <a href="https://github.com/Swapnil2429/Web-Based-Sales-Analysis-Dashboard" target="_blank">View Project</a>
-        </div>
-        <div class="project">
-            <h3>TOP Trend Analytics</h3>
-            <p>Trend analysis using data visualization.</p>
-            <a href="https://github.com/Swapnil2429/TopTrend-Analytics" target="_blank">View Project</a>
+            <h3>Project Name</h3>
+            <p>Description of the project.</p>
+            <a href="#">View Project</a>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <ul>
-            <li>Email: <a href="mailto:swapnilkapadnis2924@gmail.com">swapnilkapadnis2924@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/swapnil-kapadnis-572188344/" target="_blank">LinkedIn</a></li>
-            <li>GitHub: <a href="https://github.com/Swapnil2429" target="_blank">GitHub</a></li>
-        </ul>
+        <p>Email: your.email@example.com</p>
+        <p>GitHub: <a href="https://github.com/yourgithub">yourgithub</a></p>
     </section>
 
-    <footer>
-        <p>© 2025 Swapnil Kapadnis | Built with ❤️ for data insights.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll("nav ul li a");
+            links.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    document.getElementById(targetId).scrollIntoView({
+                        behavior: "smooth"
+                    });
+                });
+            });
+        });
+    </script>
 </body>
-</html>  
-  
+</html>
