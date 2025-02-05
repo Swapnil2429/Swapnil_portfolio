@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0027)https://rushij07.github.io/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Swapnil Kapadnis Portfolio</title>
     
@@ -126,11 +125,11 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="https://rushij07.github.io/#home-section" class="nav-link active"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="https://rushij07.github.io/#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="https://rushij07.github.io/#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="https://rushij07.github.io/#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="https://rushij07.github.io/#contact-section" class="nav-link"><span>Contact</span></a></li>
+	          <li class="nav-item"><a href="https://swapnil2429.github.io//#home-section" class="nav-link active"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="https://swapnil2429.github.io/#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="https://swapnil2429.github.io/#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="https://swapnil2429.github.io/#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="https://swapnil2429.github.io/#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -148,7 +147,7 @@
 		          <div class="one-forth d-flex align-items-center ftco-animate fadeInUp ftco-animated" data-scrollax=" properties: { translateY: &#39;70%&#39; }">
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Rushikesh Jadhav</span></h1>
+			            <h1 class="mb-4 mt-3">I'm <span>Swapnil Kapadnis</span></h1>
 
 						<!-- Element to contain animated typing -->
 						<span id="typing-animation">D</span>
@@ -161,7 +160,6 @@
 						// Create an array of typing text
 						const typingTexts = [
 						'Data Analyst  ',
-						'Data Scientist  ',
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -187,11 +185,11 @@
 
 						<br>
 						<br>
-			            <h2>Certified Data Scientist</h2>
+			            <h2>Certified Data Analyst</h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/rushikesh-jadhav01/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
-							<a href="https://github.com/Rushij07" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+			            <p><a href="https://www.linkedin.com/in/swapnil-kapadnis-572188344/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/Swapnil2429" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -219,8 +217,6 @@
 						// Create an array of typing text
 						const typingTexts = [
 						'Data Analyst  ',
-						'Data Scientist  ',
-						'Devloper   ',
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -249,8 +245,8 @@
 			            <h2>Certified Data Scientist</h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/rushikesh-jadhav01/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
-							<a href="https://github.com/Rushij07" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+			            <p><a href="https://www.linkedin.com/in/swapnil-kapadnis-572188344/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/Swapnil2429"  class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -277,9 +273,63 @@
 
 						// Create an array of typing text
 						const typingTexts = [
+						'Data Analyst  '];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Certified Data Scientist</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/swapnil-kapadnis-572188344/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/Swapnil2429" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div></div><div class="owl-item cloned" style="width: 694px;"><div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image: url(&quot;&quot;); height: 702px;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex align-items-center ftco-animate fadeInUp ftco-animated" data-scrollax=" properties: { translateY: &#39;70%&#39; }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Rushikesh Jadhav</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation">D</span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
 						'Data Analyst  ',
-						'Data Scientist  ',
-						'Devloper   ',
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -308,7 +358,7 @@
 			            <h2>Certified Data Scientist</h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/rushikesh-jadhav01/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+			            <p><a href="https://www.linkedin.com/in/swapnil-kapadnis-572188344/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
 							<a href="https://github.com/Rushij07" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
@@ -367,66 +417,7 @@
 			            <h2>Certified Data Scientist</h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/rushikesh-jadhav01/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
-							<a href="https://github.com/Rushij07" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div></div><div class="owl-item cloned" style="width: 694px;"><div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image: url(&quot;&quot;); height: 702px;">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex align-items-center ftco-animate fadeInUp ftco-animated" data-scrollax=" properties: { translateY: &#39;70%&#39; }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Rushikesh Jadhav</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation">D</span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Data Analyst  ',
-						'Data Scientist  ',
-						'Devloper   ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>Certified Data Scientist</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/rushikesh-jadhav01/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+			            <p><a href="https://www.linkedin.com/in/swapnil-kapadnis-572188344/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
 							<a href="https://github.com/Rushij07" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
@@ -604,7 +595,7 @@
 			<div class="row">
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2022-2024</span>
+    					<span class="date">2024-2025</span>
     					<h2>Masters in Computer Application</h2>
     					<span class="position">Dr. DY PATIL School of MCA (Savitribai Phule Pune University)</span>
     					<p class="mt-4">Grade: First class distinction.</p>
