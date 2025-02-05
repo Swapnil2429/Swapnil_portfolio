@@ -1,222 +1,141 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio - Data Scientist</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            transition: background 0.3s;
-        }
-        header.scrolled {
-            background: rgba(0, 0, 0, 0.9);
-        }
-        .logo {
-            font-size: 30px;
-            font-weight: 600;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
-        nav ul li {
-            margin: 0 20px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s ease-in-out;
-        }
-        nav ul li a:hover {
-            color: #ffbd39;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 150px auto 50px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        #hero {
-            background: #000;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            font-size: 36px;
-            font-weight: bold;
-        }
-        #hero h1 {
-            margin: 0;
-            animation: typing 3s steps(20, end) infinite;
-        }
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        #about img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            margin-top: 20px;
-            border: 4px solid #ffbd39;
-            transition: transform 0.3s;
-        }
-        #about img:hover {
-            transform: scale(1.1);
-        }
-        section {
-            padding: 60px 20px;
-            border-bottom: 2px solid #ddd;
-        }
-        .project-card {
-            border: none;
-            padding: 20px;
-            margin: 15px;
-            background: #ecf0f1;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-        }
-        .project-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
         }
         .progress {
-            margin: 1rem 0;
-            height: 12px;
-            background-color: #cde1f8;
-            border-radius: 10px;
+            height: 10px;
         }
-        .progress-bar {
-            height: 100%;
-            background-color: #ffbd39;
-            border-radius: 10px;
+        .underline {
+            width: 100px;
+            height: 3px;
+            background: #007bff;
+            margin-bottom: 20px;
         }
-        .smooth-scroll {
-            scroll-behavior: smooth;
+        .zoom-effect {
+            transition: transform 0.3s;
+        }
+        .zoom-effect:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
-<body class="smooth-scroll">
-    <header>
-        <div class="logo">Your Name</div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
 
-    <!-- Hero Section -->
-    <div id="hero">
-        <h1>Hello, I'm a Web Developer</h1>
-    </div>
-
-    <div class="container">
-        <!-- About Section -->
-        <section id="about">
+<!-- About Section -->
+<section class="container my-5">
+    <div class="row">
+        <div class="col-md-5">
             <h2>About Me</h2>
-            <img src="your-photo.jpg" alt="Your Photo">
-            <p>Welcome to my portfolio! I am a passionate developer with expertise in Web Development.</p>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="progress">
-                <div class="progress-bar" style="width: 80%">HTML & CSS</div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar" style="width: 70%">JavaScript</div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar" style="width: 85%">React</div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Project Name</h3>
-                <p>Description of the project.</p>
-                <a href="#">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Project Name</h3>
-                <p>Description of the project.</p>
-                <a href="#">View Project</a>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>GitHub: <a href="https://github.com/yourgithub">yourgithub</a></p>
-        </section>
+            <p>Certified Data Scientist with hands-on experience in advanced analytics and machine learning, holding a Master's degree in Computer Application.</p>
+            <ul>
+                <li><b>Profile:</b> Data Science & Analytics</li>
+                <li><b>Domain:</b> Retail, Ecommerce, Agriculture & Digital Marketing</li>
+                <li><b>Education:</b> Masters in Computer Application</li>
+                <li><b>Languages:</b> English, Hindi, Marathi</li>
+                <li><b>BI Tools:</b> Microsoft Power BI, Tableau</li>
+                <li><b>Other Skills:</b> Cloud, PySpark, Excel, Git, JIRA</li>
+                <li><b>Interests:</b> Traveling, Photography, Teaching</li>
+            </ul>
+        </div>
+        <div class="col-md-7">
+            <h3>Skills</h3>
+            <span>Statistical Analysis</span> <span class="float-end">85%</span>
+            <div class="progress"><div class="progress-bar bg-primary" style="width: 85%"></div></div>
+            
+            <span>Machine Learning</span> <span class="float-end">85%</span>
+            <div class="progress"><div class="progress-bar bg-success" style="width: 85%"></div></div>
+            
+            <p class="mt-4"><b>10+ Projects Completed</b></p>
+        </div>
     </div>
+</section>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Change navbar background on scroll
-            window.addEventListener("scroll", function () {
-                const header = document.querySelector("header");
-                if (window.scrollY > 100) {
-                    header.classList.add("scrolled");
-                } else {
-                    header.classList.remove("scrolled");
-                }
-            });
+<!-- Resume Section -->
+<section class="container my-5">
+    <h2 class="text-center">Resume</h2>
+    <p class="text-center">Proficient in developing predictive models and creating data visualizations that enhance business strategies.</p>
 
-            const links = document.querySelectorAll("nav ul li a");
-            links.forEach(link => {
-                link.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    const targetId = this.getAttribute("href").substring(1);
-                    document.getElementById(targetId).scrollIntoView({
-                        behavior: "smooth"
-                    });
-                });
-            });
-        });
-    </script>
+    <h3>Certifications</h3>
+    <div class="underline"></div>
+    <ul>
+        <li><a href="https://drive.google.com/file/d/1dIQKkWmyJsYm4B_Gg4pwQcSdyK_wHmvj/view">Data Science with Python</a></li>
+        <li><a href="https://drive.google.com/file/d/1Y_rskhJIzWlgk35qByNZspq6uBtym8Vg/view">Structured Query Language</a></li>
+        <li><a href="https://drive.google.com/file/d/1gSMLyalsRFP0I7kMMn8QNOJIQ4q31PuO/view">Microsoft Power BI</a></li>
+        <li><a href="https://drive.google.com/file/d/1cMzsf87JPaiXMM1TCBf2_qSOyt_nnZKC/view">Python Programming</a></li>
+    </ul>
+
+    <h3>Education</h3>
+    <div class="underline"></div>
+    <ul>
+        <li><b>Masters in Computer Application</b> - Dr. DY PATIL School of MCA (Savitribai Phule Pune University) | 2022-2024</li>
+        <li><b>Bachelors of Science in Computer Science</b> - Dr. Babasaheb Ambedkar Marathwada University | 2019-2022</li>
+    </ul>
+
+    <div class="text-center mt-4">
+        <a href="https://drive.google.com/file/d/1k2O-UIRsTZJwmHIb1GYfMxb3TuWnhAY1/view?usp=sharing" class="btn btn-primary">Download Resume</a>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="container my-5">
+    <h2 class="text-center">Projects</h2>
+    <p class="text-center">Sample Data Analytics and Machine Learning projects using SQL, Python, Power BI & ML.</p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <a href="https://github.com/Rushij07/Agrosense"><img src="images/proj_111.jpg" class="card-img-top zoom-effect" alt="Agrosense"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Agrosense Smart Farming Advisor</h5>
+                    <p class="card-text">Developed a decision-support system integrating Crop Recommendation, Fertilizer Suggestion, and Plant Disease Detection using ML.</p>
+                    <a href="https://github.com/Rushij07/Agrosense" class="btn btn-outline-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <a href="https://github.com/Rushij07/Loan-defaulter-prediction-"><img src="images/proj_22.jpg" class="card-img-top zoom-effect" alt="Loan Defaulter"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Loan Defaulter Prediction</h5>
+                    <p class="card-text">Used Decision Trees to predict loan defaults, processing customer financial & demographic data with 70%+ accuracy.</p>
+                    <a href="https://github.com/Rushij07/Loan-defaulter-prediction-" class="btn btn-outline-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <a href="https://github.com/Rushij07/retailhub-dashboard.git"><img src="images/proj_3.jpg" class="card-img-top zoom-effect" alt="Retail Hub"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Retail Hub Dashboard</h5>
+                    <p class="card-text">Analyzed profit by region, customer segmentation, product trends, and returned product analysis using BI tools.</p>
+                    <a href="https://github.com/Rushij07/retailhub-dashboard.git" class="btn btn-outline-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
- 
+
